@@ -1,5 +1,7 @@
 if game:GetService("CoreGui"):FindFirstChild("Prime") then return end
 
+local version = "version-4310300497aa4917"
+
 local exec, ver = identifyexecutor()
 
 local s = Instance.new("ScreenGui")
