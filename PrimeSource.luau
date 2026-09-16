@@ -1,3 +1,5 @@
+if game:GetService("CoreGui"):FindFirstChild("Prime") then return end
+
 local exec, ver = identifyexecutor()
 
 local s = Instance.new("ScreenGui")
