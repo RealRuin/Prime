@@ -42,6 +42,7 @@ f4.BackgroundColor3 = Color3.fromRGB(30,30,30)
 f4.BackgroundTransparency = 0.25
 f4.BorderColor3 = Color3.fromRGB(120,120,120)
 f4.BorderSizePixel = 2
+f4.Visible = false
 
 local f5 = Instance.new("Frame")
 f5.Parent = s
@@ -107,6 +108,30 @@ t4.TextColor3 = Color3.fromRGB(255,255,255)
 t4.TextSize = 12
 t4.Font = Enum.Font.Code
 
+local t5 = Instance.new("TextLabel")
+t5.Parent = f7
+t5.Position = UDim2.new(0, 20, 0, 20)
+t5.Size = UDim2.new(0, 194, 0, 50)
+t5.Text = "Hello, " .. game.Players.LocalPlayer.Name
+t5.BackgroundColor3 = Color3.fromRGB(30,30,30)
+t5.BorderColor3 = Color3.fromRGB(120,120,120)
+t5.BorderSizePixel = 2
+t5.TextColor3 = Color3.fromRGB(255,255,255)
+t5.TextSize = 20
+t5.Font = Enum.Font.Code
+
+local t6 = Instance.new("TextLabel")
+t6.Parent = f7
+t6.Position = UDim2.new(0, 20, 0, 80)
+t6.Size = UDim2.new(0, 194, 0, 20)
+t6.Text = version
+t6.TextSize = 14
+t6.TextColor3 = Color3.fromRGB(255,255,255)
+t6.BackgroundColor3 = Color3.fromRGB(30,30,30)
+t6.Font = Enum.Font.Code
+t6.BorderColor3 = Color3.fromRGB(120,120,120)
+t6.BorderSizePixel = 2
+
 local b = Instance.new("TextButton")
 b.Parent = f2
 b.Position = UDim2.new(0, 575, 0, 5)
@@ -155,13 +180,13 @@ b4.Size = UDim2.new(0, 150, 0, 30)
 b4.BackgroundColor3 = Color3.fromRGB(30,30,30)
 b4.BorderColor3 = Color3.fromRGB(120,120,120)
 b4.BorderSizePixel = 2
-b4.Text = "Dev"
+b4.Text = "Home"
 b4.TextSize = 16
 b4.TextColor3 = Color3.fromRGB(255,255,255)
 b4.Font = Enum.Font.Code
 b4.Activated:Connect(function()
-    f7.Visible = false
-    f4.Visible = true
+    f7.Visible = true
+    f4.Visible = false
 end)
 
 local b5 = Instance.new("TextButton")
@@ -216,11 +241,13 @@ b8.Size = UDim2.new(0, 150, 0, 30)
 b8.BackgroundColor3 = Color3.fromRGB(30,30,30)
 b8.BorderColor3 = Color3.fromRGB(120,120,120)
 b8.BorderSizePixel = 2
-b8.Text = "Lighting"
+b8.Text = "Dev"
 b8.TextSize = 16
 b8.TextColor3 = Color3.fromRGB(255,255,255)
 b8.Font = Enum.Font.Code
 b8.Activated:Connect(function()
-    f7.Visible = true
-    f4.Visible = false
+    f7.Visible = false
+    f4.Visible = true
 end)
+
+f7.Visible = true
