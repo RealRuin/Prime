@@ -132,15 +132,15 @@ t6.Font = Enum.Font.Code
 t6.BorderColor3 = Color3.fromRGB(120,120,120)
 t6.BorderSizePixel = 2
 
-local t7 = INstance.new("TextLabel")
+local t7 = Instance.new("TextLabel")
 t7.Parent = f7
-t7.Position = UDim2.new(0, 214, 50)
+t7.Position = UDim2.new(0, 234, 0, 50)
 t7.Size = UDim2.new(0, 194, 0, 20)
 t7.BackgroundColor3 = Color3.fromRGB(30,30,30)
 t7.BorderColor3 = Color3.fromRGB(120,120,120)
 t7.BorderSizePixel = 2
 t7.Text = "Status: Loading"
-t7.TextSIze = 16
+t7.TextSize = 16
 t7.TextColor3 = Color3.fromRGB(255,255,255)
 t7.Font = Enum.Font.Code
 
@@ -294,7 +294,7 @@ end)
 
 local b11 = Instance.new("TextButton")
 b11.Parent = f7
-b11.Position = UDim2.new(0, 214, 0, 20)
+b11.Position = UDim2.new(0, 234, 0, 20)
 b11.Size = UDim2.new(0, 194, 0, 20)
 b11.BackgroundColor3 = Color3.fromRGB(30,30,30)
 b11.BorderColor3 = Color3.fromRGB(120,120,120)
