@@ -265,4 +265,10 @@ b9.Activated:Connect(function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 end)
 
+local b10 = Instance.new("TextButton")
+b10.Parent = f4
+b10.Position = UDim2.new(0, 20, 0, 110)
+b10.Size = UDim2.new(0, 194, 0, 20)
+b10.BackgroundColor3 = Color3.fromRGB(30,30,30)
+
 f7.Visible = true
