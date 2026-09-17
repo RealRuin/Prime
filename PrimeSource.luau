@@ -132,6 +132,18 @@ t6.Font = Enum.Font.Code
 t6.BorderColor3 = Color3.fromRGB(120,120,120)
 t6.BorderSizePixel = 2
 
+local t7 = INstance.new("TextLabel")
+t7.Parent = f7
+t7.Position = UDim2.new(0, 214, 50)
+t7.Size = UDim2.new(0, 194, 0, 20)
+t7.BackgroundColor3 = Color3.fromRGB(30,30,30)
+t7.BorderColor3 = Color3.fromRGB(120,120,120)
+t7.BorderSizePixel = 2
+t7.Text = "Status: Loading"
+t7.TextSIze = 16
+t7.TextColor3 = Color3.fromRGB(255,255,255)
+t7.Font = Enum.Font.Code
+
 local b = Instance.new("TextButton")
 b.Parent = f2
 b.Position = UDim2.new(0, 575, 0, 5)
@@ -270,5 +282,35 @@ b10.Parent = f4
 b10.Position = UDim2.new(0, 20, 0, 110)
 b10.Size = UDim2.new(0, 194, 0, 20)
 b10.BackgroundColor3 = Color3.fromRGB(30,30,30)
+b10.BorderColor3 = Color3.fromRGB(120,102,120)
+b10.BorderSizePixel = 2
+b10.Text = "Dex++"
+b10.TextSize = 16
+b10.TextColor3 = Color3.fromRGB(255,255,255)
+b10.Font = Enum.Font.Code
+b10.Activated:Connect(function()
+    loadstring(game:HttpGet("https://github.com/AZYsGithub/DexPlusPlus/releases/latest/download/out.lua"))()
+end)
+
+local b11 = Instance.new("TextButton")
+b11.Parent = f7
+b11.Position = UDim2.new(0, 214, 0, 20)
+b11.Size = UDim2.new(0, 194, 0, 20)
+b11.BackgroundColor3 = Color3.fromRGB(30,30,30)
+b11.BorderColor3 = Color3.fromRGB(120,120,120)
+b11.BorderSizePixel = 2
+b11.Text = "Check for update"
+b11.TextSize = 16
+b11.TextColor3 = Color3.fromRGB(255,255,255)
+b11.Font = Enum.Font.Code
+b11.Activated:Connect(function()
+    t7.Text = "Status: Updating"
+    s:Destroy()
+    repeat
+        task.wait()
+    until not game:GetService("CoreGui"):FindFirstChild("Prime")
+    loadstring(game:HttpGet("https://github.com/RealRuin/Prime/raw/refs/heads/main/PrimeSource.luau"))()
+end)
 
 f7.Visible = true
+t7.Text = "Status: Ready"
