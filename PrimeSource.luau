@@ -250,4 +250,19 @@ b8.Activated:Connect(function()
     f4.Visible = true
 end)
 
+local b9 = Instance.new("TextButton")
+b9.Parent = f4
+b9.Position = UDim2.new(0, 20, 0, 80)
+b9.Size = UDim2.new(0, 194, 0, 20)
+b9.BackgroundColor3 = Color3.fromRGB(30,30,30)
+b9.BorderColor3 = Color3.fromRGB(120,120,120)
+b9.BorderSizePixel = 2
+b9.Text = "Infinite Yield"
+b9.TextSize = 16
+b9.TextColor3 = Color3.fromRGB(255,255,255)
+b9.Font = Enum.Font.Code
+b9.Activated:Connect(function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+end)
+
 f7.Visible = true
